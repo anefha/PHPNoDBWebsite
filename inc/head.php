@@ -39,7 +39,7 @@ include_once __DIR__ . '/inc/config.php';
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- JavaScript -->
-    <script src="assets/main.js"></script>
+    <script src="assets/main.js" defer></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
