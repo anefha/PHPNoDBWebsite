@@ -4,7 +4,7 @@ include_once __DIR__ . '/inc/config.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 
 <head>
     <meta charset="UTF-8" />
