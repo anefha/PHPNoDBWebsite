@@ -31,7 +31,7 @@ define('DIR_ACCESS', true); // allow access for guests
 // include the configuration file
 include_once __DIR__ . '/inc/config.php';
 
-$url = rtrim($nyw_mainurl, '/') . '/partners'; // partners
+$url = rtrim($cfg_mainurl, '/') . '/partners'; // partners
 
 // Set the title and description
 $title = $cfg_name . " - Partners";

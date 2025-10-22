@@ -5,7 +5,7 @@ define('DIR_ACCESS', true); // allow access for guests
 // include the configuration file
 include_once __DIR__ . '/inc/config.php';
 
-$url = rtrim($nyw_mainurl, '/') . '/'; // Example: /about (Empty for the homepage)
+$url = rtrim($cfg_mainurl, '/') . '/'; // Example: /about (Empty for the homepage)
 
 // Set the title and description for the homepage
 $title = $cfg_name . " - Homepage";
