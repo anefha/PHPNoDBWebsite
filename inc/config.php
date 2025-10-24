@@ -8,7 +8,7 @@ ini_set('display_errors', 0); // 0: Production (no errors shown), 1: Debug mode 
 $cfg_robots = true; // true = allow indexing, false = disallow
 
 // Main site URL (including https and www if applicable)
-$cfg_mainurl = 'https://www.example.com'; // Example: https://www.google.com
+$cfg_mainurl = 'https://www.example.com'; // Example: https://www.example.com
 
 // Your domain name (without www and https, just the domain)
 $cfg_domain = 'example.com'; // Example: example.com
