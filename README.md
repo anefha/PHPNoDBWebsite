@@ -1,55 +1,73 @@
 # PHPNoDBWebsite
 
-A minimalist, PHP-based, cms-like no-db (flat-file) website starter kit for quickly building static websites. Designed for simplicity, flexibility, and speed, this project provides a lightweight structure to help you create your website without needing a database.
+A minimalist, PHP-based, CMS-like no-database (flat-file) website starter kit for quickly building static or semi-dynamic websites.  
+Designed for simplicity, flexibility, and speed — this lightweight structure helps you create and manage a website without the need for any database.
 
-## Features
+---
 
-- **No Database**: Simple flat-file structure with PHP.
-- **Easy Configuration**: Easily configurable via a single `config.php` file.
-- **Customizable**: Easily add and update sections like the homepage, about page, services, and contact information.
+## 🚀 Features
+- **No Database** – Uses a simple flat-file PHP structure (no MySQL, Maria or SQLite required).  
+- **Easy Configuration** – Fully managed through a single `config.php` file.  
+- **Customizable** – Effortlessly add or edit sections such as Home, About, Services, or Contact.  
+- **Lightweight & Fast** – Minimal dependencies, optimized for quick deployment.
 
-## Requirements
+---
 
-- PHP 7 or higher
-- Web server with support for PHP (e.g., Apache, Nginx)
+## ⚙️ Requirements
+- PHP 7.0 or higher  
+- Any web server with PHP support (Apache, Nginx, LiteSpeed, etc.)  
 - Basic understanding of HTML, CSS, and PHP
 
-## Installation
-1. Download
-2. Move files to your website
-3. That's all!
+---
 
-## Creating New Page
-Let's create a page called “partners,” for example.
-1. create partners.php,
+## 🧩 Installation
+1. **Download or clone** this repository.  
+2. **Upload** the files to your hosting or local server.  
+3. **Configure** your website via `/inc/config.php`.  
+4. Done — your site is live!
 
-```
+---
+
+## 📄 Creating a New Page
+Example: Creating a `partners` page.
+
+1. Create a new file named `partners.php` in your project root.  
+2. Paste the following content:
+
+```php
 <?php
 
-define('DIR_ACCESS', true); // allow access for guests
+define('DIR_ACCESS', true); // Allow access for visitors
 
-// include the configuration file
+// Include the main configuration
 include_once __DIR__ . '/inc/config.php';
 
-$url = rtrim($cfg_mainurl, '/') . '/partners'; // partners
-
-// Set the title and description
+// Set up basic page variables
+$url = rtrim($cfg_mainurl, '/') . '/partners';
 $title = $cfg_name . " - Partners";
 $desc = "Partners page description";
 
-// include the URL processing file
+// Include URL handler and layout components
 include_once __DIR__ . '/inc/url.php';
-
-// include the head and navbar parts of the site
 include_once __DIR__ . '/inc/head.php';
 include_once __DIR__ . '/inc/navbar.php';
 
 ?>
 <!-- Content Start -->
 
-HTML CODE SHOULD BE HERE
+<!-- HTML CONTENT GOES HERE -->
 
 <!-- Content End -->
 
 <?php include_once __DIR__ . '/inc/footer.php'; ?>
 ```
+
+---
+
+## 💎 Sponsors
+**Nywhash**  
+![Nywhash Logo](https://static.nywhash.com/partners/nywhash/nywhash_text_color.png)
+
+---
+
+© 2025 anefha. All rights reserved under MIT License.
