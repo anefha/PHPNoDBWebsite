@@ -1,6 +1,6 @@
 <?php
 defined('DIR_ACCESS') or header('Location: ' . (isset($cfg_mainurl) ? $cfg_mainurl : '/'));
-include_once __DIR__ . '/inc/config.php';
+include_once __DIR__ . 'config.php';
 
 // prevent host header manipulation
 $allowed_host = parse_url($cfg_mainurl, PHP_URL_HOST);
