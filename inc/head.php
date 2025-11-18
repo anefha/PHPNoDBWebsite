@@ -1,6 +1,6 @@
 <?php
 defined('DIR_ACCESS') or header('Location: ' . $cfg_mainurl);
-include_once __DIR__ . 'config.php';
+include_once 'config.php';
 ?>
 
 <!DOCTYPE html>
