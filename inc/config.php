@@ -18,7 +18,7 @@ $cfg_logolink = 'https://www.example.com/logo.png'; // Example: https://www.exam
 $cfg_favicon = 'https://www.example.com/favicon.ico'; // Example: https://www.example.com/favicon.ico
 
 // Support link (can be an email address or a support URL)
-$cfg_support = 'mailto:support@example.com'; // Example: support@example.com
+$cfg_support = 'mailto:support@example.com'; // Example: mailto:support@example.com or https://example.com/support
 
 // Site or theme name
 $cfg_name = 'Example'; // Example: My Website
