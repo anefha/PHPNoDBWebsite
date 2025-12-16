@@ -25,7 +25,7 @@ include_once __DIR__ . '/inc/navbar.php';
     <section class="nf_hero">
         <h1>Welcome to <?php echo $cfg_name; ?></h1>
         <p><?php echo $cfg_name; ?> provides reliable and efficient solutions tailored for your business needs.</p>
-        <a href="about.php" class="nf_btn-primary">Learn More</a>
+        <a href="<?= $cfg_mainurl ?>/about" class="nf_btn-primary">Learn More</a>
     </section>
 
     <!-- Features Section -->
